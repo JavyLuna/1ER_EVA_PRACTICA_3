@@ -14,10 +14,15 @@ class ViewController: UIViewController {
         var sID = lblID.text
         var sPassword = lblPassword.text
         if(sID == "Javier" && sPassword == "123456"){
-            let acMiDialogo = UIAlertController(title: "Bienvenido usuario", message: sID, preferredStyle: .Alert)
-            let Button = UIAlertAction(title: "Aceptar", style: .Cancel, handler: nil)
+            let acMiDialogo = UIAlertController(title: "Bienvenido usuario "+lblID.text!, message: "Acabas de iniciar sesion", preferredStyle: .Alert)
+            
+            let Button = UIAlertAction(title: "Aceptar", style: .Default, handler: nil)
             acMiDialogo.addAction(Button)
+            
+            let Button1 = UIAlertAction(title: "Denegar", style: .Cancel, handler: nil)
+            acMiDialogo.addAction(Button1)
             presentViewController(acMiDialogo, animated: true, completion: nil)
+            
         } else {
             lblConfirma.text = "Error de usuario o password"
                     }

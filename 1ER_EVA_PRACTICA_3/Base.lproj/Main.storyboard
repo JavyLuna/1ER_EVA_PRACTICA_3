@@ -55,12 +55,12 @@
                                 <color key="backgroundColor" red="0.50897863700000001" green="0.88427567799999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.99556785821914673" green="0.006963520310819149" blue="0.12686184048652649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" keyboardAppearance="alert" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euj-qC-Xdr">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euj-qC-Xdr">
                                 <rect key="frame" x="279" y="550" width="42" height="30"/>
                                 <color key="backgroundColor" red="0.50897863700000001" green="0.88427567799999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Log In"/>
+                                <state key="normal" title="Log In" backgroundImage="button"/>
                                 <connections>
                                     <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V48-mp-Gtq"/>
                                 </connections>
@@ -116,6 +116,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button" width="146" height="86"/>
         <image name="seguridad-blindaje-logo" width="400" height="460"/>
     </resources>
 </document>
